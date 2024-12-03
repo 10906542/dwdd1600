@@ -1,0 +1,408 @@
+/* General styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Host Grotesk", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+    background-color: #FFB428;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 50px;
+    color: black;
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #F55536;
+    font-weight: bold;
+    transform: translateY(-7px);
+}
+
+nav ul, nav ul li {
+    list-style: none;
+    font-size: 18px;
+    font-family: "Host Grotesk", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    display: flex; 
+}
+
+h1 {
+    font-family: "Host Grotesk", sans-serif;
+    color: black;
+    font-size: 2.1rem;
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Host Grotesk", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h3 {
+    font-family: "Host Grotesk", sans-serif;
+    font-size: 2.4rem;
+    font-weight: bold;
+    font-style: normal;
+    margin: 40px auto 10px;
+    padding: 1rem 5rem .1rem;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 140rem;
+    text-align: center;
+}
+
+.boldstrong {
+    font-weight: bold;
+}
+
+.aboutbodytext {
+    font-family: "Host Grotesk", sans-serif;
+    font-size: 2.4rem;
+    font-weight: normal;
+    font-style: italic;
+    margin: 10px auto 50px;
+    padding: .1rem 5rem 1rem;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 140rem;
+    text-align: center;
+}
+
+.index-page {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Header styles */
+.header {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 20px);
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: transparent;
+    padding: 0;
+    font-weight: bold;
+    font-size: 2.1rem;
+    color: #F55536;
+}
+
+ul {
+    font-family: "Host Grotesk", sans-serif;
+    font-size: 18px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    column-gap: 20px;
+    font-style: normal;
+}
+
+ol {
+    font-family: "Host Grotesk", sans-serif;
+    font-size: 18px;
+    font-style: none;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    column-gap: 20px;
+    font-weight: normal;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transition: transform 0.3s ease;
+}
+
+ol li {
+    font-family: "Host Grotesk", sans-serif;
+    font-size: 18px;
+    font-style: none;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    column-gap: 20px;
+    font-weight: normal;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transition: transform 0.3s ease;
+}
+
+ol a:hover {
+    color: #F55536;
+    text-decoration: none;
+    font-weight: bold;
+    transform: translateY(-7px);
+}
+
+dl {
+    display: inline-block; /* Make the dl inline-block to control its width and centering */
+    text-align: center;
+    margin: 0 auto; /* Center the dl element */
+    padding: 0;
+}
+
+dt, dd {
+    display: block; /* Ensure dt and dd are block-level elements */
+    text-align: center; /* Center the content of dt and dd */
+    width: 100%; /* Take full width */
+    margin: 0; /* Remove default margins */
+}
+
+dd {
+    margin-bottom: 15px; /* Add space between dd elements */
+}
+
+.dldeco1 {
+    font-family: "Host Grotesk", sans-serif;
+    font-size: 2.4rem;
+    font-weight: bold;
+    font-style: normal;
+    margin: 40px auto 10px;
+    padding: 1rem 5rem .1rem;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 140rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.dldeco2 {
+    font-family: "Host Grotesk", sans-serif;
+    font-size: 2.4rem;
+    font-weight: normal;
+    font-style: italic;
+    padding: .1rem 5rem 1rem;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 140rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.portfolio-bullets {
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-bullets-title {
+    font-size: 2.4rem;
+    color: #F55536;
+    margin-bottom: 20px;
+}
+
+/* Flexbox container for the list */
+.portfolio-bullets-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.portfolio-bullets-list {
+    list-style-type: disc;
+    font-size: 1.2rem;
+    color: #444;
+    margin: 0;
+    text-align: left;
+}
+
+.portfolio-bullets-list li {
+    margin-bottom: 30px;
+}
+
+/* Fade-in */
+.image-space {
+    opacity: 0;
+    transition: opacity 1s ease-in; 
+}
+
+.image-space.visible {
+    opacity: 1;
+}
+
+@keyframes fadeInOnLoad {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.image-space {
+    animation: fadeInOnLoad 1s ease-in forwards;
+}
+
+
+/* Image container */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 30px;
+    width: 100%;
+    max-width: 890px;
+     margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.image-space {
+    width: 100%;
+    max-width: 445px;
+    object-fit: cover;
+}
+
+.image-wrapper {
+    flex: 1 1 45%;
+    text-align: center;
+}
+
+.image-wrapper img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+
+.about-title {
+   font-family: "Host Grotesk", sans-serif;
+    color: #F55536;
+    font-size: 2.1rem;
+    font-weight: bold;
+}
+
+.homepage-description1 {
+    font-family: "Host Grotesk", sans-serif;
+    font-size: 2.4rem;
+    font-weight: bold;
+    font-style: normal;
+    margin: 40px auto 10px;
+    padding: 1rem 5rem .1rem;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 140rem;
+    text-align: center;
+}
+
+.homepage-description2 {
+    font-family: "Host Grotesk", sans-serif;
+    font-size: 2.4rem;
+    font-weight: normal;
+    font-style: italic;
+    margin: 10px auto 50px;
+    padding: .1rem 5rem 1rem;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 140rem;
+    text-align: center;
+}
+
+.paragraph1 {
+    font-family: "Host Grotesk", sans-serif;
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 1.6;
+    margin: 20px auto;
+    padding: 0 2rem;
+    max-width: 80rem;
+    text-align: left;
+    color: #444;
+}
+
+.paragraph2 {
+    font-family: "Host Grotesk", sans-serif;
+    font-size: 1.7rem;
+    font-weight: normal;
+    line-height: 1.6;
+    margin: 20px auto;
+    max-width: 80rem;
+    text-align: center;
+    color: #444;
+}
+
+h2 p a:hover {
+    color: #F55536;
+    font-weight: bold;
+    transform: translateY(-7px);
+}
+
+.footer-text {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+    font-family: "Host Grotesk", sans-serif;
+    font-weight: 400;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+footer a:hover {
+    color: #F55536;
+    font-weight: bold;
+    transform: translateY(-7px);
+}
