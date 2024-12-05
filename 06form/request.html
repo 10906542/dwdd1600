@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="View artwork, designs, and projects done by Seth Parry">
+    <meta name="author" content="Seth Parry">
+    <title>seth parry: request</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+    
+<body class="request-page">
+    <header class="headerrequest">
+        <h1>
+            <a>
+                <span>PORTFOLIO</span>
+            </a>
+        </h1>
+        <h1>
+            <a>
+                <span>SETH PARRY</span>
+            </a>
+        </h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">homepage</a>
+            </li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="works.html">works</a></li>
+            <li><a href="request.html" class="currentrequest">commission</a></li>
+        </ul>
+    </nav>
+<hr class="decorative-line">
+    
+    
+    
+<main>
+    <h1 class="center">commission request</h1>
+    <form method="get" class="commissionform" action="thanks.html">
+    
+    
+    
+    <fieldset>
+    <legend>personal info</legend>
+    <label>full name*<input type="text" name="name" required></label>
+        <label>phone number*<input type="tel" name="phone" required placeholder="123-456-7899"></label>
+        <label>email*<input type="email" name="email" required></label>
+    </fieldset>
+    
+    <fieldset>
+    <legend>type of work wanted</legend>
+            <label><input type="radio" name="method" value="photo editing">photo editing (stylization, touch-ups)</label>
+            <label><input type="radio" name="method" value="traditional art">traditional art (paintings, charcoal, illustrations)</label>
+            <label><input type="radio" name="method" value="graphic design">graphic design (web design, logos, branding)</label>
+            <label><input type="radio" name="method" value="printed design">printed design (greeting cards, invitations)</label>
+            </fieldset>
+    <fieldset>
+    <legend>intended use</legend>
+    <label><input type="checkbox" name="commercial">commercial
+        </label>
+    <label><input type="checkbox" name="personal">personal
+        </label>
+        <label><input type="checkbox" name="charity"> charity
+        </label>
+        <label><input type="checkbox" name="other"> other
+        </label>
+    </fieldset>
+    <fieldset>
+     <label>time needed by
+            <select name="time">
+            <option value="none">select one</option>
+                <option value="whenever">whenever</option>
+                <option value="months">in the next few months</option>
+                <option value="weeks">in the next few weeks</option>
+                <option value="asap">asap</option>
+                </select>    
+                </label>
+            </fieldset>    
+        
+        
+    <label class="purple" >project description
+            <textarea name="comments"></textarea>
+    </label>
+        
+    <label class="purple">special requests
+            <textarea name="comments"></textarea>
+    </label>
+        
+        
+        
+        
+        
+    <input type="submit" value="send">
+    </form>
+</main>
+    <footer>
+        <address class="paragraph2">having problems with your request? let me know!</address>
+            <ol>
+                <li><a href="mailto:seth@parryweb.com">email me</a></li>
+                <li><a href="https://wa.me/16502292081">text me</a></li>
+            </ol>
+    </footer>
+
+    
+</body>
+</html>
